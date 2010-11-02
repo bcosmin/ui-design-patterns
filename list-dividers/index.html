@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>List dividers / UI design patterns</title>
+    <link rel="stylesheet" href="../css/reset.css" media="screen">
+    <link rel="stylesheet" href="../css/screen.css" media="screen">
+    <link rel="stylesheet" href="../css/list-dividers.css" media="screen">
+  </head>
+
+  <body>
+
+    <div id="container">
+      <div id="example">
+        <ul class="clearfix">
+          <li><a href="#">John</a></li>
+          <li><a href="#">Paul</a></li>
+          <li><a href="#">George</a></li>
+          <li><a href="#">Ringo</a></li>
+        </ul>
+      </div>
+
+      <div id="example-text">
+        <h2>Dividers between list items</h2>
+
+        <h3>Problem</h3>
+        <p>You're using a &lt;ul&gt; or &lt;ol&gt; and want to have a divider between list items without introducing additional elements into the markup.</p>
+
+        <h3>Solution</h3>
+        <p>Use <code>content:</code> to insert the divider after each element.</p>
+
+        <h3>Notes</h3>
+        <p>Use <code>:last-child</code> to remove the divider from the last element.</p>
+      </div>
+    </div>
+
+  </body>
+</html>

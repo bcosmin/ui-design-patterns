@@ -23,6 +23,17 @@ h1 {
   padding: 0 0 8px 0;
 }
 
+ol#pattern-list {
+  list-style: upper-roman;
+}
+
+ol#pattern-list li {
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  padding: 0 0 8px 0;
+}
+
 #example-text {
   border-top: 3px solid #ccc;
   padding: 6px 0 0 0;

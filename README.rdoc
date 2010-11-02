@@ -1,3 +1,5 @@
 = UI Design Patterns
 
+== http://ubuwaits.github.com/ui-design-patterns/search/
+
 Humble start to a collection of UI design patterns.
