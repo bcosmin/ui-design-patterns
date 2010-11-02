@@ -26,7 +26,7 @@ form fieldset.inputs {
 
 form fieldset.buttons {
   float: right;
-  margin: 2px 2px 0 0;
+  margin: 2px 2px 2px 0;
 }
 
 form ol,
@@ -43,6 +43,7 @@ form input[type="text"] {
   border: 0;
   float: right;
   font-size: 14px;
+  margin: 4px 0 0 0;
   padding: 8px 5px 8px 10px;
   width: 220px;
 }
@@ -68,4 +69,8 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
   cursor: pointer;
+}
+
+form input[type="submit"]::-moz-focus-inner {
+  border:0;
 }
