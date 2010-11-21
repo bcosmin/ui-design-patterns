@@ -6,7 +6,27 @@
     <title>List dividers / UI design patterns</title>
     <link rel="stylesheet" href="../css/reset.css" media="screen">
     <link rel="stylesheet" href="../css/screen.css" media="screen">
-    <link rel="stylesheet" href="../css/list-dividers.css" media="screen">
+    <style>
+      #example ul {
+        margin: 100px 0;
+      }
+
+      #example ul li {
+        color: #666;
+        float: left;
+        font-size: 20px;
+        margin: 0 8px 0 0;
+      }
+
+      #example ul li:after {
+        content: "/";
+        margin: 0 0 0 8px;
+      }
+
+      #example ul li:last-child:after {
+        content: "";
+      }
+    </style>
   </head>
 
   <body>
