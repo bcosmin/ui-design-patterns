@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <title>Search / UI design patterns</title>
+    <title>Search in a box / UI design patterns</title>
     <link rel="stylesheet" href="../css/reset.css" media="screen">
     <link rel="stylesheet" href="../css/screen.css" media="screen">
     <style>
       form {
-        background: #f5f5f5;
-        border: 2px solid #d1d1d1;
+        background: #e5e5e5;
+        border: 1px solid #d0d0d0;
         border-radius: 4px;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
-        -webkit-box-shadow: inset 0 0 10px 3px #ccc;
+        -webkit-box-shadow: inset 0 0 8px 2px #ddd;
         margin: 100px auto;
         padding: 0;
         width: 318px;
@@ -50,6 +50,7 @@
       form input[type="text"] {
         background: transparent;
         border: 0;
+        color: #666;
         float: right;
         font-size: 14px;
         margin: 4px 0 0 0;
@@ -58,32 +59,51 @@
       }
 
       form input[type="submit"] {
-        background: #ea8309;
-        border: 1px solid #aa5f07;
-        border-radius: 4px;
+        background: #2463de;
+        background: -moz-linear-gradient(top, #759ae9 0%, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
+        background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #759ae9), color-stop(0.5, #376fe0), color-stop(0.5, #1a5ad9), color-stop(1, #2463de));
+        border-top: 1px solid #1f58cc;
+        border-right: 1px solid #1b4db3;
+        border-bottom: 1px solid #174299;
+        border-left: 1px solid #1b4db3;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
-        -webkit-box-shadow: inset 0 1px 1px 0px #eab16e;
+        border-radius: 4px;
+        -moz-box-shadow: inset 0 0 2px 0 rgba(57, 140, 255, 0.8);
+        -webkit-box-shadow: inset 0 0 2px 0 rgba(57, 140, 255, 0.8);
+        box-shadow: inset 0 0 2px 0 rgba(57, 140, 255, 0.8);
         color: #fff;
-        cursor: pointer;
         float: right;
-        font-size: 14px;
-        height: 33px;
-        line-height: 1;
-        margin: 2px 2px 2px 0;
-        padding: 8px 12px 7px 12px;
-        text-shadow: 0 1px 1px #aa5f07;
+        font-family: "helvetica neue", helvetica, arial, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        margin-right: 2px;
+        padding: 7px 0;
+        text-shadow: 0 -1px 1px #1a5ad9;
         width: 75px;
       }
 
       form input[type="submit"]:hover {
+        background: #0d53de;
+        background: -moz-linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%);
+        background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #5d89e8), color-stop(0.5, #2261e0), color-stop(0.5, #044bd9), color-stop(1, #0d53de));
         cursor: pointer;
+      }
+
+      form input[type="submit"]:active {
+        border-top: 1px solid #1b4db3;
+        border-right: 1px solid #174299;
+        border-bottom: 1px solid #133780;
+        border-left: 1px solid #174299;
+        -moz-box-shadow: inset 0 0 5px 2px #1a47a0, 0 1px 0 #eee;
+        -webkit-box-shadow: inset 0 0 5px 2px #1a47a0, 0 1px 0 #eee;
+        box-shadow: inset 0 0 5px 2px #1a47a0, 0 1px 0 #eee;
       }
 
       form input[type="submit"]::-moz-focus-inner {
         border:0;
-      }    
-    </style>    
+      }
+    </style>
   </head>
 
   <body>
@@ -113,7 +133,7 @@
       </div>
 
       <div id="example-text">
-        <h2>Single input search form</h2>
+        <h2>Search in a box</h2>
 
         <h3>Problem</h3>
         <p>Getting the text input field and the search button to vertically align is too difficult across browsers.</p>
